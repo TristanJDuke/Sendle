@@ -1,19 +1,12 @@
-import { createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
+import Box from '@mui/system/Box';
 
 // Create a theme instance.
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#556cd6',
+const darkTheme = createTheme({
+    palette:  {
+        mode: 'dark',
     },
-    secondary: {
-      main: '#19857b',
-    },
-    error: {
-      main: red.A400,
-    },
-  },
 });
 
-export default theme;
+export default darkTheme;

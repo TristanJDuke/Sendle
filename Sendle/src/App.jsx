@@ -1,15 +1,18 @@
 import * as React from 'react';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import './App.css'
-
+import Game from './Game.jsx';
 function App() {
 
   return (
-    <Container maxWidth="sm" color="black">
-      <Typography variant="h1" component="h4" sx={{ mb: 2}}>
+    <Container maxWidth="sm">
+      <Box sx={{fontSize: '4em',textTransform: 'uppercase', fontWeight: 'bold', textAlign: 'center',}}>
         Sendle
-      </Typography>
+      </Box>
+      <Box>
+        <Game />
+      </Box>
     </Container>
   )
 }
